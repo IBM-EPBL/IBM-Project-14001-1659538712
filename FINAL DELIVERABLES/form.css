@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --main-color:#04fae5;
+    --first-color:#19e7eeea;
+}
+body{
+  background-image: url('images.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mform{
+  display:flex;
+  justify-content: center;
+}
+form{
+  position: absolute;
+  top: 15%;
+  width:40%;
+  max-width: 500px;
+  border-radius: 10px;
+  color: #161818f1;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+fieldset{
+  background-color: #fff;
+  border-radius:15px 15px 40px 40px;
+  background-attachment:fixed;
+  padding: 30px;
+}
+legend{
+  background-color:var(--main-color);
+  color: #111011;
+  padding: 5px;
+  border-radius: 5px;
+  Align: center;
+}
+label{  
+  width: 150px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 10px;
+}
+.gender{
+  width: auto;
+}
+button{
+margin-left: 150px;
+width: 200px;
+border: none;
+border-radius: 10px;
+padding: 10px;
+background-color:#03e9fa;
+}
+button a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+#t1{
+  margin-left: 100px;
+}
+input[type="email"] {
+width:auto;
+
+}
+input[type="date"] {
+width:auto;
+}
+#subscribe{
+  margin-top: 15px;
+}
+#signup-btn{
+  margin-top: 15px;
+}
+.input-group{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+.input-group label{
+  flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 2px solid rgb(110, 109, 109)
+}
+::placeholder{
+  font-size: 14px;
+  color: rgb(110, 109, 109);
+  font-weight: bold;
+}
+.input-group span{
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size:12px ;
+  color: red;
+  top: 0%;
+}
+.input-group span .fa-circle-exclamation{
+  color: red;
+}
+.input-group span .fa-circle-check{
+  color: green;
+}
+#submit-error{
+  color: red;
+}
